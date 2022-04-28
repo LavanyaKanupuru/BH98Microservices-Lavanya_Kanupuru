@@ -27,30 +27,6 @@ import org.springframework.web.bind.annotation.RestController;
 		double d = value1/value2;
 		return "addition =" +a +"subraction ="+b +" multiplication ="+c+"division ="+d;
 }
-		@RequestMapping("/Grade/{marks}")
-
-		String grade(@PathVariable Double marks) {
-			
-				
-				if(marks>=100 && marks>=90)
-				{
-					return("Your grade is A");
-				}
-				else if(marks>=80)
-				{
-					return ("your grade is B");
-				}
-				else if(marks>=70)
-				{
-					return("your grade is c");
-					
-				}
-				else
-				{
-					return("your grade is D");
-				}
-			}
-		
 		
 		
 }
